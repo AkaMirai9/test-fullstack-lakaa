@@ -1,0 +1,2 @@
+class CollectesController < ApplicationController
+end
