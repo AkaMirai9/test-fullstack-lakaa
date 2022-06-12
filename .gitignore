@@ -31,3 +31,28 @@ adoba-back/tmp/storage/*
 
 # Ignore master key for decrypting credentials and more.
 adoba-back/config/master.key
+
+#VUE gitignore
+adoba-front/.DS_Store
+adoba-front/node_modules
+/adoba-frontdist
+
+
+# local env files
+.adoba-front/env.local
+adoba-front/.env.*.local
+
+# Log files
+adoba-front/npm-debug.log*
+adoba-front/yarn-debug.log*
+adoba-front/yarn-error.log*
+adoba-front/pnpm-debug.log*
+
+# Editor directories and files
+adoba-front/.idea
+adoba-front/.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
