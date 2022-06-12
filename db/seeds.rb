@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Collecte.destroy_all
+Indicateur.destroy_all
+
+collecte1 = Collecte.create(date: "10/12/2020", assos: "Restos")
+
+indicateur1 = Indicateur.create(nom: "poids", description:"le poids de la collecte", donnees:"")

@@ -3,7 +3,6 @@ class CreateCollectes < ActiveRecord::Migration[7.0]
     create_table :collectes do |t|
       t.string :date
       t.string :assos
-      t.string :indicateurs
 
       t.timestamps
     end
