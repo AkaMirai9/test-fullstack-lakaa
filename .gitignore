@@ -5,29 +5,29 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore bundler config.
-/.bundle
+adoba-back/.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
-/db/*.sqlite3-*
+adoba-back/db/*.sqlite3
+adoba-back/db/*.sqlite3-*
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+adoba-back/log/*
+adoba-back/tmp/*
+!adoba-back/log/.keep
+!adoba-back/tmp/.keep
 
 # Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/
-!/tmp/pids/.keep
+adoba-back/tmp/pids/*
+!adoba-back/tmp/pids/
+!adoba-back/tmp/pids/.keep
 
 # Ignore uploaded files in development.
-/storage/*
-!/storage/.keep
-/tmp/storage/*
-!/tmp/storage/
-!/tmp/storage/.keep
+adoba-back/storage/*
+!adoba-back/storage/.keep
+adoba-back/tmp/storage/*
+!adoba-back/tmp/storage/
+!adoba-back/tmp/storage/.keep
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+adoba-back/config/master.key
