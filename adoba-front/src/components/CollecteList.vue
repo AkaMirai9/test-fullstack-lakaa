@@ -2,16 +2,21 @@
   <div class="page">
     <div class="collect-list">
       <template v-for="(collecte, index) in collectes" :key="index">
-        <section class="collect-card">
-          <div class="Association">
-            Association : {{ collecte.assos }}
-          </div>
-          <div>
-            <p class="Date">
-              Date de collecte : {{ collecte.date }}
-            </p>
-          </div>
-        </section>
+        <router-link :to="{
+          name: 'collecte',
+          params: collecte,
+        }">
+          <section class="collect-card">
+            <div class="Association">
+              Association : {{ collecte.assos }}
+            </div>
+            <div>
+              <p class="Date">
+                Date de collecte : {{ collecte.date }}
+              </p>
+            </div>
+          </section>
+        </router-link>
       </template>
     </div>
     <div class="add-collect">
