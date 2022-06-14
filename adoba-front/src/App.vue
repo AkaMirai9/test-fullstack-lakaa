@@ -1,10 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="layout">
+    <HeaderView />
+    <router-view />
+    <FooterView />
+  </div>
 </template>
+
+<script>
+import FooterView from './views/FooterView.vue'
+import HeaderView from './views/HeaderView.vue'
+
+export default ({
+  components: {
+    HeaderView,
+    FooterView
+  }
+})
+</script>
 
 <style>
 #app {
@@ -21,10 +33,11 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #5c9ee0;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #4254b9;
 }
+
 </style>
