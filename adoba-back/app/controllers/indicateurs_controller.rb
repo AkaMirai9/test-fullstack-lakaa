@@ -1,6 +1,6 @@
 class IndicateursController < ApplicationController
     def index
-        @indicateurs = indicateur.all
+        @indicateurs = Indicateur.all
 
         render json: @indicateurs
     end
@@ -12,14 +12,14 @@ class IndicateursController < ApplicationController
     end
 
     def create
-        @indicateur = indicateur.create(name: params[:name], description: params[:description], donnees: params[;donnees] collecteparente: params[:collecteparente])
+        @indicateur = indicateur.create(name: params[:name], description: params[:description], donnees: params[:donnees], collecteparente: params[:collecteparente])
 
         render json: @indicateur
     end
 
     def update
         @indicateur = indicateur.find(params[:id])
-        @indicateur.update(name: params[:name], description: params[:description], donnees: params[;donnees] collecteparente: params[:collecteparente])
+        @indicateur.update(name: params[:name], description: params[:description], donnees: params[:donnees], collecteparente: params[:collecteparente])
 
         render json: "#{@indicateur.name} has been updated!"
     end
