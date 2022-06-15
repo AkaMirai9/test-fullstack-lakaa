@@ -7,6 +7,7 @@
           params: collecte,
         }">
           <section class="collect-card">
+            <img src="../assets/collecte.jpg">
             <div class="Association">
               Association : {{ collecte.assos }}
             </div>
