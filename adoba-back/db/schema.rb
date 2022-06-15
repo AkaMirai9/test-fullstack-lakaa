@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_12_140921) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_15_131306) do
+  create_table "attributs", force: :cascade do |t|
+    t.string "name"
+    t.string "desc"
+    t.string "datas"
+    t.integer "collecteid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "collectes", force: :cascade do |t|
     t.string "date"
     t.string "assos"
@@ -25,8 +34,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_12_140921) do
     t.integer "collecteparente_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["collecteparente_id"], name: "index_indicateurs_on_collecteparente_id"
   end
 
-  add_foreign_key "indicateurs", "collecteparentes"
 end

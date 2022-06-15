@@ -71,10 +71,10 @@ export default {
         date: date
       })
     },
-    pushCollect: function (elem) {
+    pushCollect: async function (elem) {
       const assos = elem.assos
       const date = elem.date
-      axios.post('http://127.0.0.1:3000/collectes', null, {
+      await axios.post('http://127.0.0.1:3000/collectes', null, {
         params: {
           assos,
           date
