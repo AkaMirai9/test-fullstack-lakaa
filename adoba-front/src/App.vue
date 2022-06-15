@@ -1,9 +1,7 @@
 <template>
-  <div class="layout">
-    <HeaderView />
-    <router-view />
-    <FooterView />
-  </div>
+  <HeaderView />
+  <router-view />
+  <FooterView />
 </template>
 
 <script>
@@ -31,14 +29,19 @@ nav {
   padding: 30px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
 a {
   text-decoration: none;
   color: #2c3e50;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #f1f3f5;
 }
 
 </style>

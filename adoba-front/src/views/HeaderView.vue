@@ -1,7 +1,7 @@
 <template>
   <header class="header">
-    <h1> Adoba </h1>
-    <nav>
+    <h1> Adoba | Application RSE</h1>
+    <nav class="navbar">
       <router-link to="/">Accueil</router-link>
     </nav>
   </header>
@@ -11,11 +11,17 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  border-bottom: solid;
+  background-color: #b6eec3;
+  border-radius: 20px;
 }
 h1 {
-    right: 0;
+    margin-left: 50px;
+    margin-top: 25px;
 }
+
+nav {
+  margin-left: 65%;
+  font-size: 30px;
+}
+
 </style>

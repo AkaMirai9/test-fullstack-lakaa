@@ -1,13 +1,24 @@
 <template>
   <h2> Information sur la collecte du {{date}}</h2>
-  <h3> Avec l'association {{assos}} </h3>
+  <h3> Avec l'association <span class="assos-name">{{assos}}</span></h3>
   <br>
   <h3> Différents indicateurs des collectes </h3>
   <div class="attribut-list">
+    <section class="attribut-card-header">
+      <div>
+        Attribut:
+      </div>
+      <div>
+        Description:
+      </div>
+      <div>
+        Valeur:
+      </div>
+    </section>
     <template v-for="(attribut, index) in indicateurs" :key="index">
       <section class="attribut-card">
         <div class="name">
-          Nom : {{ attribut.name }}
+          {{ attribut.name }}
         </div>
         <div class="description">
           {{ attribut.desc }}
@@ -118,10 +129,38 @@ export default {
 
 }
 .attribut-card {
-    border: solid;
+    border:#b3b0b0;
     border-radius: 20px;
     padding: 25px;
     font-size: 20px;
     margin: 30px;
+    background-color: #bbe4b8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.attribut-card-header {
+    border:#b3b0b0;
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 20px;
+    margin: 30px;
+    background-color: #8ec98a;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.assos-name {
+  color: blue;
+}
+
+.add-attribute {
+  margin: 60px;
+  border: solid;
+  border-radius: 20px;
+  padding: 25px;
+  font-size: 20px;
 }
 </style>
