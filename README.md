@@ -6,6 +6,7 @@ Le projet avait pour but de développer une mini-application de reporting de
 collecte de denrées alimentaires pour un responsable de magasin.
 
 Pour y arriver, il fallait utiliser deux technologies :
+
     - VueJS ou React pour le front
     - Rails pour l'API
 
@@ -16,6 +17,7 @@ Ici, j'ai utilisé du VueJS.
 # Comment lancer l'application
 
 Etape 1:
+
     Cloner ou télécharger le projet à l'adresse suivante selon votre technologie :
         - HTML : gitlab.cri.epita.fr/tom.frenois/test-adoba.git
         - SSH : git@gitlab.cri.epita.fr:tom.frenois/test-adoba.git
@@ -26,6 +28,7 @@ Etape 1:
         - SSH : git@github.com:AkaMirai9/test-fullstack-lakaa.git
 
 Etape 2:
+
     Vérifier les versions de vos technologies :
         Pour ce projet, j'ai uiliser :
             - Rails 7.0.3
@@ -35,6 +38,7 @@ Etape 2:
 Assurez-vous d'avoir une version compatible.
 
 Etape 3:
+
     Lancer le serveur de l'API :
         -> Sous Linux :
             - cd test-adoba/adoba-back
@@ -42,6 +46,7 @@ Etape 3:
             - rails s
 
 Etape 4:
+
     Lancer le serveur front :
         -> Sous Linux :
             - cd test-adoba/adoba-back
@@ -49,6 +54,7 @@ Etape 4:
             - yarn serve
 
 Etape 5:
+
     Depuis votre navigateur, entrez l'url:
         - http://localhost:8080/
 
